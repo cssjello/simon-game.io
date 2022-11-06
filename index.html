@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simon Game Menu</title>
+  </head>
+  <body>
+    <div class="allforPos">
+      <h1>Simon Game</h1>
+      <h2 class="sirule">view rule</h2>
+      <h2 class="selectDiff">Please select a difficulty:</h2>
+      <div class="diffContainer">
+        <div class="basicContainer">
+          <a href="./simindex.html">
+            <button class="diffBtn basicMode">Basic Mode</button></a
+          >
+        </div>
+        <div class="advContainer">
+          <a href="simAdvIndex.html">
+            <button class="diffBtn advMode">Advance Mode</button></a
+          >
+        </div>
+      </div>
+      <p class="projectInfo">
+        By Sisi Chen, based on
+        <span class="italicThis"
+          >The Complete 2022 Web Development Bootcamp - Section 15</span
+        >
+      </p>
+    </div>
+    <div class="hidden modal">
+      <div class="result">
+        <h2 class="ruleTitle">Watch, remember, repeat!</h2>
+        <p class="ruleText">
+          The player must repeat random sequences of color by pressing the
+          colored pads in the correct order. <br />
+        </p>
+        <div class="rulesteps">
+          <p>
+            1. After press start, one pad will blink with a sound linked to the
+            pad.
+            <br />
+            2. After the blink, it's your turn to press the same color. From the
+            second sequence, you need to press all the previous colors and the
+            new color. <br />
+            <br />
+            e.g. <span class="redspan">red</span> blinks → you press
+            <span class="redspan">red</span> →
+            <span class="bluespan"> blue</span> blinks → you press
+            <span class="redspan">red</span> then also
+            <span class="bluespan">blue</span>
+          </p>
+        </div>
+        <p class="closeRule">good to go</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

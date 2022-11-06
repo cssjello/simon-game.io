@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simon Game - Advance</title>
+    <link rel="stylesheet" href="simAdvstyles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="level-title">Press A Key to Start</h1>
+    <div class="forcentering">
+      <div class="container">
+        <div class="box">
+          <div type="button" id="green" class="btn green"></div>
+        </div>
+        <div class="box">
+          <div type="button" id="red" class="btn red"></div>
+        </div>
+        <div class="box">
+          <div type="button" id="yellow" class="btn yellow"></div>
+        </div>
+        <div class="box">
+          <div type="button" id="blue" class="btn blue"></div>
+        </div>
+      </div>
+    </div>
+    <div class="forcentering">
+      <div class="container--row">
+        <div class="box box--small">
+          <div type="button" id="purple" class="btn button--long purple"></div>
+        </div>
+        <div class="box box--small">
+          <div type="button" id="orange" class="btn button--long orange"></div>
+        </div>
+        <div class="box box--small">
+          <div type="button" id="azure" class="btn button--long azure"></div>
+        </div>
+      </div>
+    </div>
+    <div class="startbtncontainer">
+      <button class="startbtn">start</button>
+    </div>
+    <div class="alwaysbackContainer">
+      <a href="./index.html">
+        <p class="backText alwaysBack">back to top</p>
+      </a>
+    </div>
+    <div class="hidden modal">
+      <div class="result">
+        <h2 class="thisLv">Total Level: <span class="totalLv">1</span></h2>
+        <h3 class="highestLv">
+          <span class="hidden newHigh">New!</span> Highest Level:
+          <span class="highLv">1</span>
+        </h3>
+        <p class="retryInstruct">
+          Press any key to retry <br />
+          or click ↓
+        </p>
+        <div class="retrybtncontainer">
+          <button class="retrybtn">retry</button>
+        </div>
+        <div class="backContainer">
+          <span class="backarrow">←</span>
+          <a href="./index.html">
+            <p class="backText">back to top</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="simAdvgame.js"></script>
+  </body>
+</html>
